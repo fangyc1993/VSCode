@@ -15,12 +15,12 @@ ol {
     text-align: center;
 }
 
-.logo>.img {
+.logo>.img>img {
     display: inline-block;
     width: 72px;
     height: 72px;
-    background: #D8D8D8;
-    border-radius: 36px;
+    /*background-image: url(https: //avatars3.githubusercontent.com/u/20449872?v=3&s=88);*/
+    border-radius: 0px;
     margin-top: 60px;
 }
 
@@ -44,31 +44,20 @@ ol {
 
 .banner {
     background: #EFEFEF;
-    text-align: center;
-    padding-top: 46px;
-}
-
-.banner>h2 {
-    background: #D8D8D8;
-    display: inline-block;
-    border-radius: 14px;
-    min-width: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 34px;
-    padding: 3px 0;
+    padding-top: 0px;
 }
 
 .banner .details {
-    padding-top: 16px;
-    padding-bottom: 34px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 
 .banner .details p {
     background: #E8E7E7;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    /*max-width: 250px;*/
+    margin-left: 0;
+    /*
+    margin-right: auto;*/
     line-height: 24px;
     border-radius: 14px;
     margin-top: 20px;
@@ -86,14 +75,14 @@ ol {
 }
 
 .products .product {
-    margin-top: 32px;
+    margin-top: 32px
 }
 
-.products .product>.img {
+.products .product>.img>img {
     background: #d8d8d8;
     border-radius: 4px;
-    min-width: 288px;
-    height: 180px;
+    min-width: 360px;
+    height: 240px;
     /*图片不需要写高度，它会自己算*/
 }
 
