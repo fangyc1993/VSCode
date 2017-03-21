@@ -71,7 +71,10 @@ ol {
 
 /* products 模块*/
 
-.products {}
+.products {
+    
+margin-bottom:50px;
+}
 
 .products>ol {
     max-height: 300px;
