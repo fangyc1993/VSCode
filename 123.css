@@ -1,0 +1,62 @@
+* {
+    margin: 1;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    background: white);
+    font-size: 14px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.siteNavigation {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.siteNavigation>li {
+    float: left;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.siteNavigation>li>ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    margin-left: -1px;
+}
+
+.siteNavigation>li:hover>ul {
+    display: block;
+}
+
+.siteNavigation li>a {
+    width: 150px;
+    display: block;
+    line-height: 30px;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+
+
+/*LoVe and HAte*/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {}
