@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOM</title>
+</head>
+
+<body>
+    <button id="btnOpen">打开新的窗口</button>
+    <button id="reload">刷新当前窗口</button>
+    <button id="search">点击获取或设置查询字符串</button>
+    <script src="bom.js"></script>
+    <script>
+        document.write(Math.random())
+        var btnOpen = document.getElementById('btnOpen')
+        var reload = document.getElementById('reload')
+        var search = document.getElementById('search')
+        btnOpen.onclick = function() {
+            var url = 'http://www.baidu.com',
+                width = 800,
+                height = 400
+            $.bom.openAtCenter(url, width, height)
+        }
+
+        reload.onclick = function() {
+            window.location.reload(true)
+        }
+        search.onclick = function() {
+            //console.log(location.search,1111)
+            console.log($.bom.search('你好', '你好吗')) //没有必要对其出现的值进 行编码
+        }
+    </script>
+</body>
+
+</html>
